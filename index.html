@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنظيم المواعيد</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="intro-section">
+        <h1>تنظيم المواعيد</h1>
+        <p>مرحباً بك في موقع التنظيم، لتنظيم مواعيدك الأسبوعية بكل سهولة.</p>
+        <button id="start-btn">ابدأ الآن</button>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <!-- جدول المواعيد الأسبوعية -->
+        <div id="schedule-section">
+            <h2>جدول المهام الأسبوعي</h2>
+            <div id="tasks-container">
+                <!-- هنا سيتم عرض جدول المهام الأسبوعي ديناميكياً -->
+            </div>
+            <button id="add-task-btn">إضافة مهمة جديدة</button>
+        </div>
+
+        <!-- إضافة مهمة جديدة -->
+        <div id="add-task-section" class="hidden">
+            <form id="task-form">
+                <label for="task-day">اليوم:</label>
+                <select id="task-day">
+                    <option value="Monday">الاثنين</option>
+                    <option value="Tuesday">الثلاثاء</option>
+                    <option value="Wednesday">الأربعاء</option>
+                    <option value="Thursday">الخميس</option>
+                    <option value="Friday">الجمعة</option>
+                    <option value="Saturday">السبت</option>
+                    <option value="Sunday">الأحد</option>
+                </select>
+                <label for="task-title">العنوان:</label>
+                <input type="text" id="task-title" required>
+                <label for="task-time">الوقت:</label>
+                <input type="time" id="task-time" required>
+                <label for="task-description">الوصف:</label>
+                <textarea id="task-description" required></textarea>
+                <button type="submit">إضافة المهمة</button>
+            </form>
+        </div>
+
+        <!-- إشعار التنبيه -->
+        <div id="daily-notification" class="hidden">
+            <p>تذكير: من فضلك أدخل مهامك للأسبوع القادم.</p>
+            <button id="close-notification">إغلاق</button>
+        </div>
+
+        <!-- حقوق الطبع والنشر -->
+        <footer>
+            <p>&copy; 2025 All rights reserved by <a href="https://github.com/ismail-sadok">Ismail Sadok</a></p>
+        </footer>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
