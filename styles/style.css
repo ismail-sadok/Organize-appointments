@@ -225,21 +225,16 @@ button:hover {
 
 /* حقوق الطبع والنشر */
 footer {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5); /* شفافية الخلفية */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-family: 'Poppins', sans-serif;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-  }
-
+    padding: 15px;
+    background-color: transparent; /* الشفافية التامة */
+    color: #666; /* لون النص */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    border: none; /* إزالة الحدود */
+}
 
 /* تأثيرات حركية */
 @keyframes fadeIn {
